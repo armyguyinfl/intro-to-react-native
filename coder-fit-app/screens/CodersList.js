@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { Button, StyleSheet, Text, View } from 'react-native'
 import { useQuery, gql } from '@apollo/client'
 
 import { CODERS_QUERY } from '../queries'
