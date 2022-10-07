@@ -20,8 +20,8 @@ export default function CodersList({ navigation }) {
         </View>
       ))}
       <Button
-        title="Add a Coder"
-        onPress={() => navigation.navigate('Add a Coder')}
+        title="Add New Coder"
+        onPress={() => navigation.navigate('Add New Coder')}
       />
     </View>
   )

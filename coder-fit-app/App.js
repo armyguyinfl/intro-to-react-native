@@ -7,6 +7,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
+import AddCoder from './screens/AddCoder'
 import CodersList from './screens/CodersList'
 
 const client = new ApolloClient({
@@ -33,7 +34,8 @@ export default function App() {
     <ApolloProvider client={client}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="All Coders" component={CodersList} />
+          <Stack.Screen name="View Coders" component={CodersList} />
+          <Stack.Screen name="Add New Coder" component={AddCoder} />
         </Stack.Navigator>
       </NavigationContainer>
       <StatusBar style="auto" />
