@@ -12,6 +12,7 @@ export default function CodersList({ navigation }) {
 
   return (
     <View style={styles.container}>
+      <Text>The Awesome Coders:</Text>
       {data.coders.map((coder) => (
         <View className="coder" key={coder.id}>
           <Text>{coder.name}</Text>

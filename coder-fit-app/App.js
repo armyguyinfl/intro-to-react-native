@@ -2,6 +2,11 @@ import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
+
+// Navigation specific imports from Lab 5
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+
 import CodersList from './screens/CodersList'
 
 const client = new ApolloClient({
@@ -21,15 +26,18 @@ const client = new ApolloClient({
   connectToDevTools: true,
 })
 
+const Stack = createNativeStackNavigator()
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* <Text>Daniel Open up App.js to start working on your app!</Text> */}
-      <ApolloProvider client={client}>
-        <CodersList />
-        <StatusBar style="auto" />
-      </ApolloProvider>
-    </View>
+    <ApolloProvider client={client}>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="All Coders" component={CodersList} />
+        </Stack.Navigator>
+      </NavigationContainer>
+      <StatusBar style="auto" />
+    </ApolloProvider>
   )
 }
 
