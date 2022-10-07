@@ -1,15 +1,9 @@
 import { StyleSheet, Text, View, Button } from 'react-native'
 import { useQuery, gql } from '@apollo/client'
 
-export const CODERS_QUERY = gql`
-  query coders {
-    coders {
-      id
-      name
-      description
-    }
-  }
-`
+import { CODERS_QUERY } from '../queries'
+// Not needed at this time
+// const coderQuery = useQuery(CODERS_QUERY)
 
 export default function CodersList({ navigation }) {
   const { loading, error, data } = useQuery(CODERS_QUERY)
