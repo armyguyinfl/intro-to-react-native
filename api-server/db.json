@@ -2,47 +2,47 @@
   "coders": [
     {
       "id": 1,
-      "name": "Daniel Kowalec \uD83C\uDDF5\uD83C\uDDF1",
+      "name": "Daniel Kowalec 🇵🇱",
       "description": "Daniel Kowalec is a coder",
       "activities": [1]
     },
     {
       "id": 2,
-      "name": "Gene Chechel",
+      "name": "Gene Chechel 🇺🇦",
       "description": "Gene Chechel is a coder",
       "activities": [1, 2]
     },
     {
       "id": 3,
-      "name": "Chris Hamm",
+      "name": "Chris Hamm 🇺🇸",
       "description": "Chris Hamm is a coder",
       "activities": [1, 2]
     },
     {
       "id": 4,
-      "name": "Dan Denysenko",
+      "name": "Dan Denysenko 🇺🇦",
       "description": "Dan Denysenko is a coder",
       "activities": [1, 2]
     },
     {
       "id": 5,
-      "name": "Chris Minnick",
+      "name": "Chris Minnick 🇺🇸",
       "description": "Chris Minnick is a coder",
       "activities": []
     },
     {
       "id": 6,
-      "name": "Sally",
+      "name": "Sally 🇺🇸",
       "description": "Sally is a coder.",
       "activities": []
     },
     {
-      "name": "Andressa Kowalec",
+      "name": "Andressa Kowalec 🇧🇷",
       "description": "Andressa Kowalec is a coder",
       "id": 7
     },
     {
-      "name": "Blake Kowalec",
+      "name": "Blake Kowalec 🇺🇸",
       "description": "Blake Kowalec is a coder",
       "id": 8
     }
